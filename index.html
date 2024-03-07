@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="flex justify-center items-center h-screen bg-cover bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1624953187665-7d41d0ade16e?q=80&w=3272&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="container bg-white min-h-45vh w-96 p-12 rounded-lg">
+        <h2 class="text-2xl mb-8">Currency Converter</h2>
+        <form>
+            <div class="amt mb-8">
+                <p class="mb-2">Enter Amount</p>
+                <input type="text" value="1" class="w-full border border-solid border-gray-300 rounded-0.75rem p-2">
+            </div>
+            <div class="dropdown flex items-center justify-between mb-8">
+                <div class="from">
+                    <p class="mb-2">From</p>
+                    <div class="select-container flex items-center border border-solid border-gray-300 rounded-0.5rem p-2">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="" class="max-w-8 mr-2">
+                        <select name="from" class="text-base"></select>
+                    </div>
+                </div>
+                <i class="fas fa-exchange text-2xl icon"></i>
+                <div class="to">
+                    <p class="mb-2">To</p>
+                    <div class="select-container flex items-center border border-solid border-gray-300 rounded-0.5rem p-2">
+                        <img src="https://flagsapi.com/NP/flat/64.png" alt="" class="max-w-8 mr-2">
+                        <select name="to" class="text-base"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="msg mb-8">Updating exchange rate . . .</div>
+            <button class="w-full h-12 border border-solid border-gray-300 text-base text-center bg-orange">Get Exchange Rate</button>
+        </form>
+    </div>
+
+    <script src="/src/codes.js"></script>
+    <script src="/src/app.js"></script>
+</body>
+
+</html>
